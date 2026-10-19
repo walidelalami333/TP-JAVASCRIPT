@@ -1,5 +1,4 @@
-// Les réponses correctes du QCM
-// Pour les questions à choix multiples, il faut sélectionner toutes les bonnes réponses.
+
 var bonnesReponses = [
     ["a"],       // Question 1
     ["b"],       // Question 2
@@ -24,12 +23,12 @@ var textesChoix = [
     ["length", "join()", "reverse()"]
 ];
 
-// Réinitialise les réponses du formulaire
+
 function initialiserQCM() {
     document.qcm.reset();
 }
 
-// Récupère les réponses sélectionnées pour une question
+
 function lireReponses(numero) {
     var reponses = [];
     var choix = document.getElementsByName("q" + numero);
@@ -42,7 +41,7 @@ function lireReponses(numero) {
     return reponses;
 }
 
-// Vérifie si deux tableaux contiennent les mêmes réponses
+
 function verifierReponse(reponses, bonnes) {
     if (reponses.length != bonnes.length) {
         return false;
@@ -56,7 +55,7 @@ function verifierReponse(reponses, bonnes) {
     return true;
 }
 
-// Ouvre une nouvelle fenêtre et affiche le corrigé complet
+
 function afficherCorrige() {
     var fenetre = window.open("", "corrige", "width=700,height=650,resizable=yes,scrollbars=yes");
 
@@ -87,7 +86,7 @@ function afficherCorrige() {
     fenetre.document.close();
 }
 
-// Corrige les réponses et affiche le résultat dans une nouvelle fenêtre
+
 function afficherResultat() {
     var fenetre = window.open("", "resultat", "width=600,height=450,resizable=yes,scrollbars=yes");
 
