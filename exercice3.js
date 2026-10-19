@@ -1,7 +1,6 @@
-// Cette fonction reçoit un tableau de nombres et retourne le tableau trié.
+
 function trier(tableau) {
-    // sort() trie d'abord comme du texte.
-    // La comparaison numérique permet de trier correctement les nombres.
+ 
     tableau.sort(function(a, b) {
         return a - b;
     });
