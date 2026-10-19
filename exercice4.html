@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 4 - Somme de durées</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercice4.js"></script>
+</head>
+<body>
+    <h1>Exercice 4 : Somme de trois durées</h1>
+    <p>Entrez les trois durées en heures, minutes et secondes.</p>
 
+    <form name="formTemps" onsubmit="return false;">
+        <h2>Premier temps</h2>
+        Heures <input type="number" id="h1" value="2" min="0">
+        Minutes <input type="number" id="m1" value="2333" min="0">
+        Secondes <input type="number" id="s1" value="2" min="0">
+
+        <h2>Deuxième temps</h2>
+        Heures <input type="number" id="h2" value="23" min="0">
+        Minutes <input type="number" id="m2" value="2" min="0">
+        Secondes <input type="number" id="s2" value="1" min="0">
+
+        <h2>Troisième temps</h2>
+        Heures <input type="number" id="h3" value="233" min="0">
+        Minutes <input type="number" id="m3" value="23" min="0">
+        Secondes <input type="number" id="s3" value="23344" min="0">
+
+        <p>
+            <input type="button" value="Somme" onclick="calculerSomme()">
+            <input type="reset" value="Effacer" onclick="effacerResultat()">
+        </p>
+    </form>
+
+    <div id="resultat" class="resultat">
+        Le total s'affichera ici.
+    </div>
+
+    <p><a href="index.html">Retour à l'accueil</a></p>
+</body>
+</html>

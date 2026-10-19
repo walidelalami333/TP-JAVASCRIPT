@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 3 - Trier un tableau</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercice3.js"></script>
+</head>
+<body>
+    <h1>Exercice 3 : Trier un tableau de nombres</h1>
+    <p>Entrez plusieurs nombres séparés par des virgules</p>
 
+    <form name="formTri" onsubmit="return false;">
+        <label for="nombres">Nombres :</label>
+        <input type="text" id="nombres" size="35" >
+        <input type="button" value="Trier" onclick="afficherTableauTrie()">
+    </form>
+
+    <p id="resultat" class="resultat">Le tableau trié s'affichera ici.</p>
+    <p><a href="index.html">Retour à l'accueil</a></p>
+</body>
+</html>

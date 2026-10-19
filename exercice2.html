@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 2 - Vérification e-mail</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="exercice2.js"></script>
+</head>
+<body>
+    <h1>Exercice 2 : Vérifier une adresse e-mail</h1>
+    <p>Entrez une adresse e-mail. Le programme vérifie quelques règles simples.</p>
 
+    <form name="formEmail" onsubmit="return false;">
+        <label for="email">Adresse e-mail :</label>
+        <input type="text" id="email" name="email" size="35">
+        <input type="button" value="Vérifier" onclick="verifierEmail()">
+        <input type="reset" value="Effacer" onclick="effacerMessage()">
+    </form>
+
+    <p id="message" class="resultat">Le résultat s'affichera ici.</p>
+    <p><a href="index.html">Retour à l'accueil</a></p>
+</body>
+</html>
